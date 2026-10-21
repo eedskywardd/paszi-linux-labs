@@ -4,14 +4,32 @@
   "difficulty": "Intermediate",
   "time": "45-60 minutes",
   "details": {
-    "intro": { "text": "intro.md" },
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh"
+    },
     "steps": [
-      { "title": "1. Диагностика сети", "text": "step1/text.md", "verify": "step1/verify.sh" },
-      { "title": "2. Исправление межсетевого экрана", "text": "step2/text.md", "verify": "step2/verify.sh" },
-      { "title": "3. Аудит и доказательства", "text": "step3/text.md", "verify": "step3/verify.sh" }
+      {
+        "title": "1. Диагностика сети",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Исправление межсетевого экрана",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Аудит и доказательства",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      }
     ],
-    "finish": { "text": "finish.md" },
-    "background": "background.sh"
+    "finish": {
+      "text": "finish.md"
+    }
   },
-  "backend": { "imageid": "ubuntu" }
+  "backend": {
+    "imageid": "ubuntu"
+  }
 }
