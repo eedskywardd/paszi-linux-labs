@@ -1,0 +1,40 @@
+{
+  "title": "ПАСЗИ №16 — Инцидент в базе данных",
+  "description": "Интерактивная лабораторная: разграничение доступа в PostgreSQL",
+  "difficulty": "Intermediate",
+  "time": "45–55 minutes",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh"
+    },
+    "steps": [
+      {
+        "title": "1. Права оператора",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Аудитор и стажёр",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Конфиденциальный столбец",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Свободный отчёт",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
