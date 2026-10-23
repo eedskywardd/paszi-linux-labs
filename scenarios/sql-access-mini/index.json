@@ -1,0 +1,30 @@
+{
+  "title": "ПАСЗИ · Мини-практикум: команды SQL и права доступа",
+  "description": "Небольшая лабораторная для закрепления GRANT, REVOKE и проверки полномочий",
+  "difficulty": "Beginner",
+  "time": "25–35 minutes",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh"
+    },
+    "steps": [
+      {
+        "title": "1. Доступ к каталогу",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Исправление прав на заказы",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
