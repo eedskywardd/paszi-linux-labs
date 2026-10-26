@@ -1,0 +1,35 @@
+{
+  "title": "ПАСЗИ №17 — Защита Microsoft SQL Server",
+  "description": "Практика штатных средств защиты SQL Server 2022: роли, GRANT/REVOKE, права на столбцы",
+  "difficulty": "Intermediate",
+  "time": "45–55 minutes",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh"
+    },
+    "steps": [
+      {
+        "title": "1. Доступ аналитика",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Защита кадровых данных",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Секретный столбец",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu-4GB"
+  }
+}
