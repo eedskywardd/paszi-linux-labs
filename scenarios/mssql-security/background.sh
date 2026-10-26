@@ -3,16 +3,55 @@ set -Eeuo pipefail
 exec > >(tee -a /root/paszi17_setup.log) 2>&1
 trap 'echo "SETUP_FAILED: cat /root/paszi17_setup.log; docker logs paszi17-sqlserver" >/root/PASZI17_ERROR' ERR
 
+status() { printf '%s\n' "$1" >/root/PASZI17_STATUS; echo "[PASZI17] $1"; }
+on_fail() { echo 'FAILED' >/root/PASZI17_STATUS; echo "Не удалось подготовить стенд на строке $1. См. /root/paszi17_setup.log" >/root/PASZI17_ERROR; }
+trap 'on_fail "$LINENO"' ERR
+status 'STARTING: начало настройки'
+
+cat >/usr/local/bin/paszi17-status <<'SCRIPT'
+#!/usr/bin/env bash
+if [ -f /root/PASZI17_READY ]; then
+ echo 'READY: SQL Server готов. Выполните sql17'
+elif [ -f /root/PASZI17_ERROR ]; then
+ cat /root/PASZI17_ERROR
+else
+ cat /root/PASZI17_STATUS 2>/dev/null || echo 'STARTING'
+ echo 'SQL Server ещё подготавливается. Не вводите SQL до READY.'
+fi
+SCRIPT
+chmod +x /usr/local/bin/paszi17-status
+
+cat >/usr/local/bin/sql17 <<'SCRIPT'
+#!/usr/bin/env bash
+set -euo pipefail
+if [ ! -f /root/PASZI17_READY ]; then paszi17-status; exit 2; fi
+PW='PasziLab17!2026aa'
+CTR='paszi17-sqlserver'
+CMD='/opt/mssql-tools18/bin/sqlcmd'
+if ! docker exec "$CTR" test -x "$CMD"; then CMD='/opt/mssql-tools/bin/sqlcmd'; fi
+if [ "$#" -gt 0 ] && [ "$1" = '-Q' ]; then
+  shift
+  docker exec -i -e "SQLCMDPASSWORD=$PW" "$CTR" "$CMD" -S localhost -U sa -C -d paszi17 -b -l 8 -Q "$*"
+else
+  docker exec -it -e "SQLCMDPASSWORD=$PW" "$CTR" "$CMD" -S localhost -U sa -C -d paszi17 -l 8
+fi
+SCRIPT
+chmod 755 /usr/local/bin/sql17
+
 # Static lab-only credential. This environment is ephemeral; never use production data.
 PASSWORD='PasziLab17!2026aa'
 CTR='paszi17-sqlserver'
 IMAGE='mcr.microsoft.com/mssql/server:2022-latest'
 
+status 'CHECKING: проверка Docker'
+command -v docker >/dev/null
 docker info >/dev/null
 ram=$(free -m | awk '/^Mem:/ {print $2}')
 if [ "$ram" -lt 3300 ]; then echo 'SQL Server needs the ubuntu-4GB image'; exit 1; fi
+status 'PULLING: загрузка SQL Server (может занять время)'
 docker image inspect "$IMAGE" >/dev/null 2>&1 || docker pull "$IMAGE"
 docker rm -f "$CTR" >/dev/null 2>&1 || true
+status 'STARTING_SQL: запуск SQL Server'
 docker run -d --name "$CTR" --memory=3g -e ACCEPT_EULA=Y -e MSSQL_PID=Developer -e "MSSQL_SA_PASSWORD=$PASSWORD" -e MSSQL_MEMORY_LIMIT_MB=2304 "$IMAGE"
 
 CMD='/opt/mssql-tools18/bin/sqlcmd'
@@ -29,6 +68,7 @@ for i in $(seq 1 150); do
 done
 if [ "$ready" != 1 ]; then echo 'SQL Server start timeout'; docker logs --tail=60 "$CTR"; exit 1; fi
 
+status 'SEEDING: настройка учебной базы'
 cat >/root/paszi17_seed.sql <<'SQL'
 CREATE DATABASE [paszi17];
 GO
@@ -61,22 +101,6 @@ SQL
 docker cp /root/paszi17_seed.sql "$CTR:/tmp/paszi17_seed.sql"
 docker exec -e "SQLCMDPASSWORD=$PASSWORD" "$CTR" "$CMD" -S localhost -U sa -C -b -l 15 -i /tmp/paszi17_seed.sql
 
-cat >/usr/local/bin/sql17 <<'SCRIPT'
-#!/usr/bin/env bash
-set -euo pipefail
-PW='PasziLab17!2026aa'
-CTR='paszi17-sqlserver'
-CMD='/opt/mssql-tools18/bin/sqlcmd'
-if ! docker exec "$CTR" test -x "$CMD"; then CMD='/opt/mssql-tools/bin/sqlcmd'; fi
-if [ "$#" -gt 0 ] && [ "$1" = '-Q' ]; then
-  shift
-  docker exec -i -e "SQLCMDPASSWORD=$PW" "$CTR" "$CMD" -S localhost -U sa -C -d paszi17 -b -l 8 -Q "$*"
-else
-  docker exec -it -e "SQLCMDPASSWORD=$PW" "$CTR" "$CMD" -S localhost -U sa -C -d paszi17 -l 8
-fi
-SCRIPT
-chmod 755 /usr/local/bin/sql17
-
 cat >/root/paszi17_check.sh <<'SCRIPT'
 #!/usr/bin/env bash
 set -euo pipefail
@@ -92,4 +116,4 @@ is_zero() { test "$(sqlq "$1" | tr -d '[:space:]')" = '0'; }
 SCRIPT
 chmod 600 /root/paszi17_check.sh
 echo READY >/root/PASZI17_READY
-echo 'SQL Server ready; start with sql17'
+status 'READY: используйте sql17'
