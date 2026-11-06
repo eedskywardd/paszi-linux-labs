@@ -1,0 +1,23 @@
+{
+  "title": "ОС · Bash с нуля 02: поиск, фильтрация и конвейеры",
+  "description": "Работа с текстом в Bash: head, tail, wc, grep, sort, uniq, конвейер |, история команд и перенаправление",
+  "difficulty": "Beginner",
+  "time": "45–55 minutes",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh"
+    },
+    "steps": [
+      { "title": "1. Первые и последние строки: head, tail, wc", "text": "step1/text.md", "verify": "step1/verify.sh" },
+      { "title": "2. Поиск текста: grep", "text": "step2/text.md", "verify": "step2/verify.sh" },
+      { "title": "3. Сортировка: sort", "text": "step3/text.md", "verify": "step3/verify.sh" },
+      { "title": "4. Убираем повторы: uniq", "text": "step4/text.md", "verify": "step4/verify.sh" },
+      { "title": "5. Конвейер: символ |", "text": "step5/text.md", "verify": "step5/verify.sh" },
+      { "title": "6. История команд и повторное использование", "text": "step6/text.md", "verify": "step6/verify.sh" },
+      { "title": "7. Самостоятельная мини-задача", "text": "step7/text.md", "verify": "step7/verify.sh" }
+    ],
+    "finish": { "text": "finish.md" }
+  },
+  "backend": { "imageid": "ubuntu" }
+}
