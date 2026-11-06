@@ -1,0 +1,20 @@
+{
+  "title": "ОС · Bash с нуля 01: терминал, команды и файлы",
+  "description": "Первое знакомство с Bash: команда, аргумент, путь, каталоги, файлы, копирование, удаление, маски и перенаправление",
+  "difficulty": "Beginner",
+  "time": "45–55 minutes",
+  "details": {
+    "intro": { "text": "intro.md" },
+    "steps": [
+      { "title": "1. Терминал, shell и Bash", "text": "step1/text.md", "verify": "step1/verify.sh" },
+      { "title": "2. Где я нахожусь: pwd, ls, cd", "text": "step2/text.md", "verify": "step2/verify.sh" },
+      { "title": "3. Каталоги и файлы: mkdir, touch", "text": "step3/text.md", "verify": "step3/verify.sh" },
+      { "title": "4. Текст в файлах: echo, cat, > и >>", "text": "step4/text.md", "verify": "step4/verify.sh" },
+      { "title": "5. Копирование, перемещение и удаление", "text": "step5/text.md", "verify": "step5/verify.sh" },
+      { "title": "6. Ключи, скрытые файлы и маска *", "text": "step6/text.md", "verify": "step6/verify.sh" },
+      { "title": "7. Самостоятельная мини-задача", "text": "step7/text.md", "verify": "step7/verify.sh" }
+    ],
+    "finish": { "text": "finish.md" }
+  },
+  "backend": { "imageid": "ubuntu" }
+}
