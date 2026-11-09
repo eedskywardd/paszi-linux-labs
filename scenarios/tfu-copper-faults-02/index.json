@@ -1,0 +1,40 @@
+{
+  "title": "ТФУ №2: ошибки распиновки и витых пар",
+  "description": "MISWIRE, REVERSED PAIR и SPLIT PAIR: диагностика, классификация и восстановление медных линий",
+  "difficulty": "Beginner",
+  "time": "40–50 minutes",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh"
+    },
+    "steps": [
+      {
+        "title": "1. Найти подозрительные линии",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Диагностировать MISWIRE и REVERSED PAIR",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Найти SPLIT PAIR",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Исправить линии и выполнить контроль",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
