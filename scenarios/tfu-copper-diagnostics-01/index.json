@@ -1,0 +1,40 @@
+{
+  "title": "ТФУ №1: диагностика медной линии",
+  "description": "Link Down → кабельный тестер → TDR → локализация обрыва → ремонт линии",
+  "difficulty": "Beginner",
+  "time": "35–45 minutes",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh"
+    },
+    "steps": [
+      {
+        "title": "1. Определить проблемную линию",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Проверить wiremap",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Локализовать дефект с TDR",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Оформить диагноз и восстановить линию",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
