@@ -1,0 +1,23 @@
+{
+  "title": "ОС · Bash с нуля 03: пути, поиск файлов и права доступа",
+  "description": "Абсолютные и относительные пути, . .. ~, поиск find, чтение прав доступа, chmod в символьной и числовой форме",
+  "difficulty": "Beginner",
+  "time": "45–55 minutes",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh"
+    },
+    "steps": [
+      { "title": "1. Абсолютный и относительный путь", "text": "step1/text.md", "verify": "step1/verify.sh" },
+      { "title": "2. Точки, родительский каталог и домашний каталог", "text": "step2/text.md", "verify": "step2/verify.sh" },
+      { "title": "3. Ищем файлы командой find", "text": "step3/text.md", "verify": "step3/verify.sh" },
+      { "title": "4. Читаем права доступа", "text": "step4/text.md", "verify": "step4/verify.sh" },
+      { "title": "5. Меняем права буквами: chmod", "text": "step5/text.md", "verify": "step5/verify.sh" },
+      { "title": "6. Права числами: 755, 644, 600", "text": "step6/text.md", "verify": "step6/verify.sh" },
+      { "title": "7. Самостоятельная мини-задача", "text": "step7/text.md", "verify": "step7/verify.sh" }
+    ],
+    "finish": { "text": "finish.md" }
+  },
+  "backend": { "imageid": "ubuntu" }
+}
