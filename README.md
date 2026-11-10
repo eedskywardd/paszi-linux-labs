@@ -9,6 +9,7 @@
 - **Bash 01: терминал, команды и файлы** — [scenarios/os1-bash-01](scenarios/os1-bash-01)
 - **Bash 02: поиск, фильтрация и конвейеры** — [scenarios/os1-bash-02](scenarios/os1-bash-02)
 - **Bash 03: пути, поиск файлов и права доступа** — [scenarios/os1-bash-03](scenarios/os1-bash-03)
+- **ОС04: системная информация Linux** — [scenarios/os1-bash-04](scenarios/os1-bash-04)
 
 Перед выдачей группе после изменений в GitHub выполните в Killercoda Creator → Repository → **Sync Now** и один раз пройдите сценарий самостоятельно в облачном стенде.
 
