@@ -1,0 +1,50 @@
+{
+  "title": "ТФУ №4: комплексная диагностика линий связи",
+  "description": "Медь + оптика: Link, wiremap, VFL, Power Meter, OTDR, локализация и устранение нескольких неисправностей",
+  "difficulty": "Intermediate",
+  "time": "70–90 minutes",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh"
+    },
+    "steps": [
+      {
+        "title": "1. Провести первичную диагностику",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Найти дефект медной линии",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Проверить оптическую линию VFL",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Измерить оптическую мощность",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. Локализовать событие с помощью OTDR",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      },
+      {
+        "title": "6. Оформить диагноз и восстановить сеть",
+        "text": "step6/text.md",
+        "verify": "step6/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
