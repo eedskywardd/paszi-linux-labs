@@ -1,0 +1,40 @@
+{
+  "title": "ТФУ №3: диагностика PoE-линии",
+  "description": "PoE: питание устройства, класс мощности, просадка напряжения и поиск причины отказа",
+  "difficulty": "Beginner",
+  "time": "40–50 minutes",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh"
+    },
+    "steps": [
+      {
+        "title": "1. Найти проблемное PoE-устройство",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Проверить параметры PoE",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Проверить линию под нагрузкой",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Исправить проблему и провести контроль",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
