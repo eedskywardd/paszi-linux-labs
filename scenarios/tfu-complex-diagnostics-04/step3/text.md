@@ -27,6 +27,18 @@ LOCATION=
 nano /root/tfu04/vfl.txt
 ```
 
-Для значений используйте слова из вывода прибора.
+Для `CONTINUITY` и `VISIBLE_LEAK` используйте значения из вывода прибора.
+
+Для `LOCATION` можно записать место **как в выводе VFL**:
+
+```text
+LOCATION=rack B / patch-cord bend
+```
+
+Также CHECK примет вариант без пробелов:
+
+```text
+LOCATION=rack_B_patch-cord_bend
+```
 
 После этого нажмите **CHECK**.
