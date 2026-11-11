@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760">
+<rect width="1200" height="760" fill="#f5f7fa"/>
+<rect x="40" y="40" width="1120" height="680" rx="24" fill="white" stroke="#222" stroke-width="3"/>
+<text x="600" y="85" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">Объект для проектирования СКС</text>
+
+<rect x="90" y="130" width="260" height="170" fill="#e8f1ff" stroke="#2d5aa7" stroke-width="3"/>
+<text x="220" y="165" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700">Кабинет 101</text>
+<text x="220" y="200" text-anchor="middle" font-family="Arial" font-size="18">12 ПК</text>
+<text x="220" y="230" text-anchor="middle" font-family="Arial" font-size="18">длина линий 35–70 м</text>
+<text x="220" y="260" text-anchor="middle" font-family="Arial" font-size="18">обычная офисная зона</text>
+
+<rect x="470" y="130" width="260" height="170" fill="#fff4df" stroke="#b36a00" stroke-width="3"/>
+<text x="600" y="165" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700">Коридор</text>
+<text x="600" y="200" text-anchor="middle" font-family="Arial" font-size="18">AP-01</text>
+<text x="600" y="230" text-anchor="middle" font-family="Arial" font-size="18">PoE</text>
+<text x="600" y="260" text-anchor="middle" font-family="Arial" font-size="18">до шкафа 82 м</text>
+
+<rect x="850" y="130" width="260" height="170" fill="#ffe7e7" stroke="#b13b3b" stroke-width="3"/>
+<text x="980" y="165" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700">Камера CAM-01</text>
+<text x="980" y="200" text-anchor="middle" font-family="Arial" font-size="18">PoE</text>
+<text x="980" y="230" text-anchor="middle" font-family="Arial" font-size="18">рядом силовой кабель</text>
+<text x="980" y="260" text-anchor="middle" font-family="Arial" font-size="18">длина 62 м</text>
+
+<rect x="90" y="410" width="260" height="170" fill="#e9ffe9" stroke="#2c7a2c" stroke-width="3"/>
+<text x="220" y="445" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700">Серверная</text>
+<text x="220" y="480" text-anchor="middle" font-family="Arial" font-size="18">SW1 + патч-панель</text>
+<text x="220" y="510" text-anchor="middle" font-family="Arial" font-size="18">этаж 1</text>
+
+<rect x="470" y="410" width="260" height="170" fill="#efe7ff" stroke="#6840a8" stroke-width="3"/>
+<text x="600" y="445" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700">Шкаф SW2</text>
+<text x="600" y="480" text-anchor="middle" font-family="Arial" font-size="18">этаж 2</text>
+<text x="600" y="510" text-anchor="middle" font-family="Arial" font-size="18">магистраль 180 м</text>
+
+<rect x="850" y="410" width="260" height="170" fill="#e7fbff" stroke="#22738b" stroke-width="3"/>
+<text x="980" y="445" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700">Удалённый корпус</text>
+<text x="980" y="480" text-anchor="middle" font-family="Arial" font-size="18">SW3</text>
+<text x="980" y="510" text-anchor="middle" font-family="Arial" font-size="18">650 м от серверной</text>
+
+<line x1="350" y1="215" x2="470" y2="215" stroke="#333" stroke-width="5"/>
+<line x1="730" y1="215" x2="850" y2="215" stroke="#333" stroke-width="5"/>
+<line x1="220" y1="300" x2="220" y2="410" stroke="#333" stroke-width="5"/>
+<line x1="350" y1="495" x2="470" y2="495" stroke="#5b45b0" stroke-width="7"/>
+<line x1="730" y1="495" x2="850" y2="495" stroke="#5b45b0" stroke-width="7"/>
+<text x="410" y="475" text-anchor="middle" font-family="Arial" font-size="16">F01</text>
+<text x="790" y="475" text-anchor="middle" font-family="Arial" font-size="16">F02</text>
+
+<text x="600" y="665" text-anchor="middle" font-family="Arial" font-size="17">Задача: выбрать физическую среду, кабель, PoE и компоненты для каждого участка</text>
+</svg>
