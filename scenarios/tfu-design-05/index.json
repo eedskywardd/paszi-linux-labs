@@ -1,0 +1,50 @@
+{
+  "title": "ТФУ №5: проектирование физического сегмента сети",
+  "description": "Выбор среды передачи, кабеля, оптики, PoE и компонентов СКС по условиям объекта",
+  "difficulty": "Intermediate",
+  "time": "70–90 minutes",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh"
+    },
+    "steps": [
+      {
+        "title": "1. Изучить объект и классифицировать линии",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "2. Выбрать медные линии",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "3. Выбрать оптические линии",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "4. Выбрать PoE и активные компоненты",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "5. Собрать спецификацию СКС",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      },
+      {
+        "title": "6. Финальная инженерная проверка",
+        "text": "step6/text.md",
+        "verify": "step6/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
