@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="500" viewBox="0 0 1100 500">
+<rect width="1100" height="500" fill="#fafafa"/>
+<text x="550" y="55" text-anchor="middle" font-family="Arial" font-size="28" font-weight="700">Подсказка: границы выбора среды</text>
+<rect x="70" y="120" width="260" height="240" rx="18" fill="#fff" stroke="#333" stroke-width="3"/>
+<text x="200" y="160" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700">Медь</text>
+<text x="200" y="205" text-anchor="middle" font-family="Arial" font-size="18">до 100 м</text>
+<text x="200" y="240" text-anchor="middle" font-family="Arial" font-size="18">Cat6 / Cat6A</text>
+<text x="200" y="275" text-anchor="middle" font-family="Arial" font-size="18">PoE возможно</text>
+<text x="200" y="310" text-anchor="middle" font-family="Arial" font-size="18">экранирование при помехах</text>
+
+<rect x="420" y="120" width="260" height="240" rx="18" fill="#fff" stroke="#333" stroke-width="3"/>
+<text x="550" y="160" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700">MM-оптика</text>
+<text x="550" y="205" text-anchor="middle" font-family="Arial" font-size="18">магистраль внутри здания</text>
+<text x="550" y="240" text-anchor="middle" font-family="Arial" font-size="18">OM3 / OM4</text>
+<text x="550" y="275" text-anchor="middle" font-family="Arial" font-size="18">LC + SFP</text>
+<text x="550" y="310" text-anchor="middle" font-family="Arial" font-size="18">устойчива к ЭМП</text>
+
+<rect x="770" y="120" width="260" height="240" rx="18" fill="#fff" stroke="#333" stroke-width="3"/>
+<text x="900" y="160" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700">SM-оптика</text>
+<text x="900" y="205" text-anchor="middle" font-family="Arial" font-size="18">дальние линии</text>
+<text x="900" y="240" text-anchor="middle" font-family="Arial" font-size="18">OS2</text>
+<text x="900" y="275" text-anchor="middle" font-family="Arial" font-size="18">LC + SFP</text>
+<text x="900" y="310" text-anchor="middle" font-family="Arial" font-size="18">сотни метров и дальше</text>
+
+<text x="550" y="430" text-anchor="middle" font-family="Arial" font-size="18">Не копируйте эту схему механически — решение должно соответствовать условиям каждого участка.</text>
+</svg>
