@@ -1,0 +1,19 @@
+{
+  "title": "ТФУ №7Б: итоговая диагностика — ремонт и приёмка",
+  "description": "Финальная работа: выбрать ремонт, восстановить четыре линии, выполнить приёмочные измерения и оформить акт",
+  "difficulty": "Intermediate",
+  "time": "60–80 minutes",
+  "details": {
+    "intro": { "text": "intro.md", "background": "background.sh" },
+    "steps": [
+      { "title": "1. Принять диагностическую карту", "text": "step1/text.md", "verify": "step1/verify.sh" },
+      { "title": "2. Выбрать ремонтные действия", "text": "step2/text.md", "verify": "step2/verify.sh" },
+      { "title": "3. Восстановить медные линии", "text": "step3/text.md", "verify": "step3/verify.sh" },
+      { "title": "4. Восстановить PoE и оптику", "text": "step4/text.md", "verify": "step4/verify.sh" },
+      { "title": "5. Провести приёмочные измерения", "text": "step5/text.md", "verify": "step5/verify.sh" },
+      { "title": "6. Оформить итоговый акт", "text": "step6/text.md", "verify": "step6/verify.sh" }
+    ],
+    "finish": { "text": "finish.md" }
+  },
+  "backend": { "imageid": "ubuntu" }
+}
