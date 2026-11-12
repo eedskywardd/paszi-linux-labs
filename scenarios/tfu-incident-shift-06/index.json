@@ -1,0 +1,22 @@
+{
+  "title": "ТФУ №6: аварийная смена — комплексная диагностика",
+  "description": "Три заявки одновременно: медь, PoE и оптика. Выбор прибора, диагностика, ремонт и итоговый акт",
+  "difficulty": "Intermediate",
+  "time": "75–90 minutes",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh"
+    },
+    "steps": [
+      { "title": "1. Разобрать аварийные заявки", "text": "step1/text.md", "verify": "step1/verify.sh" },
+      { "title": "2. Диагностировать медную линию", "text": "step2/text.md", "verify": "step2/verify.sh" },
+      { "title": "3. Диагностировать PoE-линию", "text": "step3/text.md", "verify": "step3/verify.sh" },
+      { "title": "4. Диагностировать оптический uplink", "text": "step4/text.md", "verify": "step4/verify.sh" },
+      { "title": "5. Выбрать правильные действия по ремонту", "text": "step5/text.md", "verify": "step5/verify.sh" },
+      { "title": "6. Восстановить объект и оформить акт", "text": "step6/text.md", "verify": "step6/verify.sh" }
+    ],
+    "finish": { "text": "finish.md" }
+  },
+  "backend": { "imageid": "ubuntu" }
+}
