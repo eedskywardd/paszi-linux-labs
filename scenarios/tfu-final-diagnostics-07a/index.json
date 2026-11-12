@@ -1,0 +1,19 @@
+{
+  "title": "ТФУ №7А: итоговая диагностика — найти причины",
+  "description": "Финальная диагностика: четыре аварии, выбор прибора, медь, Split Pair, PoE и оптика",
+  "difficulty": "Intermediate",
+  "time": "70–90 minutes",
+  "details": {
+    "intro": { "text": "intro.md", "background": "background.sh" },
+    "steps": [
+      { "title": "1. Разобрать заявки и выбрать приборы", "text": "step1/text.md", "verify": "step1/verify.sh" },
+      { "title": "2. Диагностировать обрыв L11", "text": "step2/text.md", "verify": "step2/verify.sh" },
+      { "title": "3. Найти скрытый дефект L12", "text": "step3/text.md", "verify": "step3/verify.sh" },
+      { "title": "4. Диагностировать PoE P18", "text": "step4/text.md", "verify": "step4/verify.sh" },
+      { "title": "5. Диагностировать оптику F07", "text": "step5/text.md", "verify": "step5/verify.sh" },
+      { "title": "6. Собрать диагностическую карту", "text": "step6/text.md", "verify": "step6/verify.sh" }
+    ],
+    "finish": { "text": "finish.md" }
+  },
+  "backend": { "imageid": "ubuntu" }
+}
