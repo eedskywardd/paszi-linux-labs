@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820">
+<rect width="1400" height="820" fill="#f5f7fa"/>
+<text x="700" y="50" text-anchor="middle" font-family="Arial" font-size="30" font-weight="700">ТФУ №7 — объект итогового проектирования</text>
+
+<rect x="70" y="100" width="300" height="180" rx="18" fill="#e8f1ff" stroke="#2d5aa7" stroke-width="3"/>
+<text x="220" y="140" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700">Кабинет 101</text>
+<text x="220" y="180" text-anchor="middle" font-family="Arial" font-size="18">12 ПК</text>
+<text x="220" y="210" text-anchor="middle" font-family="Arial" font-size="18">линии 25–68 м</text>
+<text x="220" y="240" text-anchor="middle" font-family="Arial" font-size="18">обычная офисная зона</text>
+
+<rect x="550" y="100" width="300" height="180" rx="18" fill="#e8f1ff" stroke="#2d5aa7" stroke-width="3"/>
+<text x="700" y="140" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700">Кабинет 201</text>
+<text x="700" y="180" text-anchor="middle" font-family="Arial" font-size="18">12 ПК</text>
+<text x="700" y="210" text-anchor="middle" font-family="Arial" font-size="18">линии 30–72 м</text>
+<text x="700" y="240" text-anchor="middle" font-family="Arial" font-size="18">2 этаж</text>
+
+<rect x="1030" y="100" width="300" height="180" rx="18" fill="#fff0e0" stroke="#a76500" stroke-width="3"/>
+<text x="1180" y="140" text-anchor="middle" font-family="Arial" font-size="22" font-weight="700">PoE-устройства</text>
+<text x="1180" y="180" text-anchor="middle" font-family="Arial" font-size="18">AP-01 · AP-02</text>
+<text x="1180" y="210" text-anchor="middle" font-family="Arial" font-size="18">CAM-01 · CAM-02 · CAM-03</text>
+<text x="1180" y="240" text-anchor="middle" font-family="Arial" font-size="18">CAM-03 рядом с силовой трассой</text>
+
+<rect x="100" y="480" width="320" height="190" rx="18" fill="#e9ffe9" stroke="#2c7a2c" stroke-width="3"/>
+<text x="260" y="525" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700">Серверная / SW1</text>
+<text x="260" y="565" text-anchor="middle" font-family="Arial" font-size="18">главный шкаф</text>
+<text x="260" y="600" text-anchor="middle" font-family="Arial" font-size="18">патч-панели + PoE + ODF</text>
+
+<rect x="540" y="480" width="320" height="190" rx="18" fill="#efe7ff" stroke="#6840a8" stroke-width="3"/>
+<text x="700" y="525" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700">Шкаф 2 этажа / SW2</text>
+<text x="700" y="565" text-anchor="middle" font-family="Arial" font-size="18">F01 = 160 м</text>
+<text x="700" y="600" text-anchor="middle" font-family="Arial" font-size="18">межэтажная магистраль</text>
+
+<rect x="980" y="480" width="320" height="190" rx="18" fill="#e7fbff" stroke="#22738b" stroke-width="3"/>
+<text x="1140" y="525" text-anchor="middle" font-family="Arial" font-size="24" font-weight="700">Удалённый корпус / SW3</text>
+<text x="1140" y="565" text-anchor="middle" font-family="Arial" font-size="18">F02 = 680 м</text>
+<text x="1140" y="600" text-anchor="middle" font-family="Arial" font-size="18">отдельное здание</text>
+
+<line x1="260" y1="280" x2="260" y2="480" stroke="#333" stroke-width="5"/>
+<line x1="700" y1="280" x2="700" y2="480" stroke="#333" stroke-width="5"/>
+<line x1="1180" y1="280" x2="1140" y2="480" stroke="#333" stroke-width="5"/>
+<line x1="420" y1="575" x2="540" y2="575" stroke="#6840a8" stroke-width="8"/>
+<line x1="860" y1="575" x2="980" y2="575" stroke="#6840a8" stroke-width="8"/>
+<text x="480" y="555" text-anchor="middle" font-family="Arial" font-size="18">F01</text>
+<text x="920" y="555" text-anchor="middle" font-family="Arial" font-size="18">F02</text>
+
+<text x="700" y="755" text-anchor="middle" font-family="Arial" font-size="18">Итоговая задача: спроектировать, рассчитать, диагностировать и принять физический уровень объекта</text>
+</svg>
