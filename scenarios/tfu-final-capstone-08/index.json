@@ -1,0 +1,25 @@
+{
+  "title": "ТФУ №8: итоговая работа — проект, диагностика и приёмка",
+  "description": "Финальная работа на 2 пары: проектирование физического уровня, расчёты, диагностика медных и оптических линий, PoE и итоговая приёмка",
+  "difficulty": "Intermediate",
+  "time": "150–180 minutes",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh"
+    },
+    "steps": [
+      { "title": "1. Изучить объект и составить план", "text": "step1/text.md", "verify": "step1/verify.sh" },
+      { "title": "2. Спроектировать медные линии", "text": "step2/text.md", "verify": "step2/verify.sh" },
+      { "title": "3. Спроектировать оптические магистрали", "text": "step3/text.md", "verify": "step3/verify.sh" },
+      { "title": "4. Рассчитать порты и компоненты СКС", "text": "step4/text.md", "verify": "step4/verify.sh" },
+      { "title": "5. Рассчитать бюджет оптической линии", "text": "step5/text.md", "verify": "step5/verify.sh" },
+      { "title": "6. Найти неисправность медной линии", "text": "step6/text.md", "verify": "step6/verify.sh" },
+      { "title": "7. Найти неисправность PoE-линии", "text": "step7/text.md", "verify": "step7/verify.sh" },
+      { "title": "8. Найти неисправность оптической линии", "text": "step8/text.md", "verify": "step8/verify.sh" },
+      { "title": "9. Выполнить ремонт и итоговую приёмку", "text": "step9/text.md", "verify": "step9/verify.sh" }
+    ],
+    "finish": { "text": "finish.md" }
+  },
+  "backend": { "imageid": "ubuntu" }
+}
