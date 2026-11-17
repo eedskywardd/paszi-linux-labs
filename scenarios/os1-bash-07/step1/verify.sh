@@ -11,4 +11,4 @@ grep -qx 'SCRIPT=./args.sh' args_output.txt || { echo "✗ Первая стро
 grep -qx 'FIRST=Ivan' args_output.txt || { echo "✗ Первый аргумент должен быть Ivan."; exit 1; }
 grep -qx 'SECOND=18' args_output.txt || { echo "✗ Второй аргумент должен быть 18."; exit 1; }
 [[ "$(wc -l < args_output.txt)" -eq 3 ]] || { echo "✗ В args_output.txt должно быть 3 строки."; exit 1; }
-echo "✓ $0, $1 и $2 использованы правильно."
+echo '✓ $0, $1 и $2 использованы правильно.'
