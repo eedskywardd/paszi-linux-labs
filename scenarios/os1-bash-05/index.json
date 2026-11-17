@@ -1,0 +1,20 @@
+{
+  "title": "ОС05 · Bash: процессы, фоновые задачи и мониторинг",
+  "description": "Процессы Linux в Bash: ps, PID, PPID, фоновые задачи, &, $!, jobs, kill, top и базовый мониторинг",
+  "difficulty": "Beginner",
+  "time": "55–70 minutes",
+  "details": {
+    "intro": {"text": "intro.md","background": "background.sh"},
+    "steps": [
+      {"title":"1. Что такое процесс: ps, PID и PPID","text":"step1/text.md","verify":"step1/verify.sh"},
+      {"title":"2. Находим собственный Bash-процесс","text":"step2/text.md","verify":"step2/verify.sh"},
+      {"title":"3. Запускаем задачу в фоне: & и $!","text":"step3/text.md","verify":"step3/verify.sh"},
+      {"title":"4. Проверяем фоновые задачи: jobs и ps -p","text":"step4/text.md","verify":"step4/verify.sh"},
+      {"title":"5. Завершаем свой процесс: kill","text":"step5/text.md","verify":"step5/verify.sh"},
+      {"title":"6. Мониторинг: uptime, free и top","text":"step6/text.md","verify":"step6/verify.sh"},
+      {"title":"7. Самостоятельная мини-задача: контроль процесса","text":"step7/text.md","verify":"step7/verify.sh"}
+    ],
+    "finish":{"text":"finish.md"}
+  },
+  "backend":{"imageid":"ubuntu"}
+}
