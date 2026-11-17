@@ -10,4 +10,4 @@ expected="$(mktemp)"
 } > "$expected"
 cmp -s "$expected" command_substitution.txt || { rm -f "$expected"; echo "✗ command_substitution.txt содержит неверные значения."; exit 1; }
 rm -f "$expected"
-echo "✓ Подстановка команд $(...) использована правильно."
+echo '✓ Подстановка команд $(...) использована правильно.'
