@@ -7,4 +7,4 @@ grep -q '\$#' count_args.sh || { echo "✗ В count_args.sh должен исп�
 [[ -f count_output.txt ]] || { echo "✗ Нет count_output.txt."; exit 1; }
 grep -qx 'COUNT=3' count_output.txt || { echo "✗ При трёх аргументах COUNT должен быть 3."; exit 1; }
 grep -qx 'FIRST=red' count_output.txt || { echo "✗ Первый аргумент должен быть red."; exit 1; }
-echo "✓ Количество аргументов через $# определено правильно."
+echo '✓ Количество аргументов через $# определено правильно.'
