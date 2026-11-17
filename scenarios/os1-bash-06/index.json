@@ -1,0 +1,20 @@
+{
+  "title": "ОС06 · Bash: переменные, окружение, alias и первый скрипт",
+  "description": "Переменные Bash, переменные окружения, export, подстановка команд, alias и создание первого исполняемого .sh-скрипта",
+  "difficulty": "Beginner",
+  "time": "55–70 minutes",
+  "details": {
+    "intro": {"text":"intro.md","background":"background.sh"},
+    "steps": [
+      {"title":"1. Переменные Bash","text":"step1/text.md","verify":"step1/verify.sh"},
+      {"title":"2. Переменные окружения","text":"step2/text.md","verify":"step2/verify.sh"},
+      {"title":"3. export: передаём переменную дочернему процессу","text":"step3/text.md","verify":"step3/verify.sh"},
+      {"title":"4. Подстановка команд: $(...)","text":"step4/text.md","verify":"step4/verify.sh"},
+      {"title":"5. Создаём свои alias","text":"step5/text.md","verify":"step5/verify.sh"},
+      {"title":"6. Первый исполняемый Bash-скрипт","text":"step6/text.md","verify":"step6/verify.sh"},
+      {"title":"7. Самостоятельная мини-задача: info.sh","text":"step7/text.md","verify":"step7/verify.sh"}
+    ],
+    "finish":{"text":"finish.md"}
+  },
+  "backend":{"imageid":"ubuntu"}
+}
