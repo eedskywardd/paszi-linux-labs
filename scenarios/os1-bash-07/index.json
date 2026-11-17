@@ -1,0 +1,20 @@
+{
+  "title": "ОС07 · Bash: аргументы, условия и коды возврата",
+  "description": "Аргументы скрипта $1 и $2, количество аргументов $#, код возврата $?, проверки [ ], if/else и создание утилиты filecheck.sh",
+  "difficulty": "Beginner",
+  "time": "60–75 minutes",
+  "details": {
+    "intro": {"text":"intro.md","background":"background.sh"},
+    "steps": [
+      {"title":"1. Аргументы скрипта: $0, $1 и $2","text":"step1/text.md","verify":"step1/verify.sh"},
+      {"title":"2. Сколько аргументов передано: $#","text":"step2/text.md","verify":"step2/verify.sh"},
+      {"title":"3. Код возврата команды: $?","text":"step3/text.md","verify":"step3/verify.sh"},
+      {"title":"4. Проверки [ ]: файл или каталог","text":"step4/text.md","verify":"step4/verify.sh"},
+      {"title":"5. Первое условие if / else / fi","text":"step5/text.md","verify":"step5/verify.sh"},
+      {"title":"6. Скрипт проверяет файл и считает строки","text":"step6/text.md","verify":"step6/verify.sh"},
+      {"title":"7. Самостоятельная мини-задача: filecheck.sh","text":"step7/text.md","verify":"step7/verify.sh"}
+    ],
+    "finish":{"text":"finish.md"}
+  },
+  "backend":{"imageid":"ubuntu"}
+}
