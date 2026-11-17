@@ -5,6 +5,10 @@ d=/root/bash06/work/final
 [[ -f "$d/info.sh" ]] || { echo "✗ Нет info.sh."; exit 1; }
 [[ -x "$d/info.sh" ]] || { echo "✗ info.sh должен быть исполняемым."; exit 1; }
 head -n 1 "$d/info.sh" | grep -qx '#!/usr/bin/env bash' || { echo "✗ Первая строка info.sh должна быть #!/usr/bin/env bash."; exit 1; }
+grep -q 'whoami' "$d/info.sh" || { echo "✗ В info.sh должна использоваться команда whoami."; exit 1; }
+grep -q 'hostname' "$d/info.sh" || { echo "✗ В info.sh должна использоваться команда hostname."; exit 1; }
+grep -q 'uname -r' "$d/info.sh" || { echo "✗ В info.sh должна использоваться команда uname -r."; exit 1; }
+grep -q '\$HOME' "$d/info.sh" || { echo "✗ В info.sh должна использоваться переменная \$HOME."; exit 1; }
 [[ -f "$d/result.txt" ]] || { echo "✗ Нет result.txt."; exit 1; }
 expected="$(mktemp)"
 {
