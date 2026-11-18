@@ -1,0 +1,24 @@
+{
+  "title": "ТФУ Практическая №9: проектирование и паспортизация СКС",
+  "description": "Итоговая работа без диагностики: проектирование физической инфраструктуры, расчёт трасс, портов, маркировка, спецификация и паспорт СКС",
+  "difficulty": "Intermediate",
+  "time": "120–150 minutes",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh"
+    },
+    "steps": [
+      { "title": "1. Изучить объект", "text": "step1/text.md", "verify": "step1/verify.sh" },
+      { "title": "2. Выбрать кабельные решения", "text": "step2/text.md", "verify": "step2/verify.sh" },
+      { "title": "3. Рассчитать кабельные трассы", "text": "step3/text.md", "verify": "step3/verify.sh" },
+      { "title": "4. Рассчитать порты и коммутацию", "text": "step4/text.md", "verify": "step4/verify.sh" },
+      { "title": "5. Разработать систему маркировки", "text": "step5/text.md", "verify": "step5/verify.sh" },
+      { "title": "6. Составить спецификацию", "text": "step6/text.md", "verify": "step6/verify.sh" },
+      { "title": "7. Составить паспорт СКС", "text": "step7/text.md", "verify": "step7/verify.sh" },
+      { "title": "8. Сдать итоговый проект", "text": "step8/text.md", "verify": "step8/verify.sh" }
+    ],
+    "finish": { "text": "finish.md" }
+  },
+  "backend": { "imageid": "ubuntu" }
+}
