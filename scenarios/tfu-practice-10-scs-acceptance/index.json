@@ -1,0 +1,24 @@
+{
+  "title": "ТФУ Практическая №10: проверка и приёмка СКС",
+  "description": "Приёмо-сдаточные испытания СКС, спроектированной в практической №9: медь, PoE, оптика, маркировка, резерв портов и документация",
+  "difficulty": "Intermediate",
+  "time": "120–150 minutes",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "background.sh"
+    },
+    "steps": [
+      { "title": "1. Сверить построенную СКС с проектом", "text": "step1/text.md", "verify": "step1/verify.sh" },
+      { "title": "2. Сертифицировать медные линии", "text": "step2/text.md", "verify": "step2/verify.sh" },
+      { "title": "3. Проверить PoE-линии", "text": "step3/text.md", "verify": "step3/verify.sh" },
+      { "title": "4. Проверить оптические магистрали", "text": "step4/text.md", "verify": "step4/verify.sh" },
+      { "title": "5. Проверить маркировку и коммутацию", "text": "step5/text.md", "verify": "step5/verify.sh" },
+      { "title": "6. Проверить запас портов и соответствие спецификации", "text": "step6/text.md", "verify": "step6/verify.sh" },
+      { "title": "7. Оформить протокол испытаний", "text": "step7/text.md", "verify": "step7/verify.sh" },
+      { "title": "8. Выполнить итоговую приёмку", "text": "step8/text.md", "verify": "step8/verify.sh" }
+    ],
+    "finish": { "text": "finish.md" }
+  },
+  "backend": { "imageid": "ubuntu" }
+}
