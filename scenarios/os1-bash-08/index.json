@@ -1,0 +1,20 @@
+{
+  "title": "ОС08 · Bash: циклы и массовая обработка файлов",
+  "description": "Циклы for и while, счётчики, маски файлов, условия внутри циклов и автоматическая обработка каталога",
+  "difficulty": "Beginner",
+  "time": "60–75 minutes",
+  "details": {
+    "intro": {"text":"intro.md","background":"background.sh"},
+    "steps": [
+      {"title":"1. Первый цикл for","text":"step1/text.md","verify":"step1/verify.sh"},
+      {"title":"2. Повторение и счётчик","text":"step2/text.md","verify":"step2/verify.sh"},
+      {"title":"3. Цикл по файлам: *.txt","text":"step3/text.md","verify":"step3/verify.sh"},
+      {"title":"4. if внутри for: файл или каталог","text":"step4/text.md","verify":"step4/verify.sh"},
+      {"title":"5. while read: читаем файл построчно","text":"step5/text.md","verify":"step5/verify.sh"},
+      {"title":"6. Первый скрипт массовой обработки","text":"step6/text.md","verify":"step6/verify.sh"},
+      {"title":"7. Самостоятельная мини-задача: folder_report.sh","text":"step7/text.md","verify":"step7/verify.sh"}
+    ],
+    "finish":{"text":"finish.md"}
+  },
+  "backend":{"imageid":"ubuntu"}
+}
