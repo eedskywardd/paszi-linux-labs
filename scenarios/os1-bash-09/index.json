@@ -1,0 +1,20 @@
+{
+  "title": "ОС09 · Bash: функции, case и интерактивное меню",
+  "description": "Функции Bash, аргументы функций, local, return, case, read и создание консольного меню",
+  "difficulty": "Beginner",
+  "time": "60–75 minutes",
+  "details": {
+    "intro": {"text":"intro.md","background":"background.sh"},
+    "steps": [
+      {"title":"1. Первая функция Bash","text":"step1/text.md","verify":"step1/verify.sh"},
+      {"title":"2. Аргументы функции","text":"step2/text.md","verify":"step2/verify.sh"},
+      {"title":"3. local и return","text":"step3/text.md","verify":"step3/verify.sh"},
+      {"title":"4. Выбор действия через case","text":"step4/text.md","verify":"step4/verify.sh"},
+      {"title":"5. Первое интерактивное меню","text":"step5/text.md","verify":"step5/verify.sh"},
+      {"title":"6. Несколько функций в одной программе","text":"step6/text.md","verify":"step6/verify.sh"},
+      {"title":"7. Самостоятельная мини-задача: sysmenu.sh","text":"step7/text.md","verify":"step7/verify.sh"}
+    ],
+    "finish":{"text":"finish.md"}
+  },
+  "backend":{"imageid":"ubuntu"}
+}
