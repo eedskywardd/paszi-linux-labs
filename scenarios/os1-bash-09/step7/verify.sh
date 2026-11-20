@@ -5,10 +5,23 @@ d=/root/bash09/work/final
 script="$d/sysmenu.sh"
 
 [[ -d "$d" ]] || { echo "✗ Каталог final не найден."; exit 1; }
-[[ -f "$script" ]] || { echo "✗ Нет sysmenu.sh."; exit 1; }
+if [[ ! -f "$script" ]]; then
+  if [[ -f "$d/systemenu.sh" ]]; then
+    echo "✗ Найден systemenu.sh, но нужен файл sysmenu.sh. Переименуйте: mv systemenu.sh sysmenu.sh"
+  elif [[ -f "$d/systemmenu.sh" ]]; then
+    echo "✗ Найден systemmenu.sh, но нужен файл sysmenu.sh. Переименуйте: mv systemmenu.sh sysmenu.sh"
+  else
+    echo "✗ Нет файла /root/bash09/work/final/sysmenu.sh."
+  fi
+  exit 1
+fi
 [[ -x "$script" ]] || { echo "✗ sysmenu.sh должен быть исполняемым."; exit 1; }
 
-head -n 1 "$script" | grep -qx '#!/usr/bin/env bash' || { echo "✗ Первая строка должна быть #!/usr/bin/env bash."; exit 1; }
+first_line="$(head -n 1 "$script" | tr -d '\r')"
+[[ "$first_line" == '#!/usr/bin/env bash' || "$first_line" == '#!/bin/bash' ]] || {
+  echo "✗ Первая строка должна быть #!/usr/bin/env bash или #!/bin/bash."
+  exit 1
+}
 grep -q 'show_system()' "$script" || { echo "✗ Нужна функция show_system()."; exit 1; }
 grep -q 'count_files()' "$script" || { echo "✗ Нужна функция count_files()."; exit 1; }
 grep -q 'show_user()' "$script" || { echo "✗ Нужна функция show_user()."; exit 1; }
