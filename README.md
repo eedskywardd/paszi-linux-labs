@@ -14,6 +14,7 @@
 - **ОС06: Bash — переменные, окружение, alias и первый скрипт** — [scenarios/os1-bash-06](scenarios/os1-bash-06)
 - **ОС07: Bash — аргументы, условия и коды возврата** — [scenarios/os1-bash-07](scenarios/os1-bash-07)
 - **ОС08: Bash — циклы и массовая обработка файлов** — [scenarios/os1-bash-08](scenarios/os1-bash-08)
+- **ОС09: Bash — функции, case и интерактивное меню** — [scenarios/os1-bash-09](scenarios/os1-bash-09)
 
 Перед выдачей группе после изменений в GitHub выполните в Killercoda Creator → Repository → **Sync Now** и один раз пройдите сценарий самостоятельно в облачном стенде.
 
