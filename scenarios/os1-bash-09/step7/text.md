@@ -24,10 +24,24 @@ pwd
 /root/bash09/work/final
 ```
 
-Создайте исполняемый:
+Создайте файл **именно с таким именем**:
+
+```bash
+nano sysmenu.sh
+```
+
+Имя должно быть ровно:
 
 ```text
 sysmenu.sh
+```
+
+> Не `systemenu.sh`, не `systemmenu.sh` и не `sys_menu.sh`. Все команды ниже и CHECK работают с файлом `sysmenu.sh`.
+
+После сохранения сделайте его исполняемым:
+
+```bash
+chmod +x sysmenu.sh
 ```
 
 ## Требования
