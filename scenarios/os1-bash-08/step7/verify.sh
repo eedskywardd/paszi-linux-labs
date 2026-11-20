@@ -8,7 +8,11 @@ script="$d/folder_report.sh"
 [[ -f "$script" ]] || { echo "✗ Нет folder_report.sh."; exit 1; }
 [[ -x "$script" ]] || { echo "✗ folder_report.sh должен быть исполняемым."; exit 1; }
 
-head -n 1 "$script" | grep -qx '#!/usr/bin/env bash' || { echo "✗ Первая строка должна быть #!/usr/bin/env bash."; exit 1; }
+first_line="$(head -n 1 "$script" | tr -d '\r')"
+[[ "$first_line" == '#!/usr/bin/env bash' || "$first_line" == '#!/bin/bash' ]] || {
+  echo "✗ Первая строка должна быть #!/usr/bin/env bash или #!/bin/bash."
+  exit 1
+}
 grep -q '\$#' "$script" || { echo "✗ Нужно проверить количество аргументов через \$#."; exit 1; }
 grep -q '\$1' "$script" || { echo "✗ Нужно использовать первый аргумент \$1."; exit 1; }
 grep -q '\-d' "$script" || { echo "✗ Нужно проверить каталог через -d."; exit 1; }
