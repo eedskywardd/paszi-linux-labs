@@ -10,11 +10,11 @@
 cd /root/bash08/work
 ```
 
-Создайте каталог `final` и войдите в него.
-
-Проверьте:
+Создайте каталог `final` и **обязательно войдите в него**:
 
 ```bash
+mkdir -p final
+cd final
 pwd
 ```
 
@@ -26,11 +26,37 @@ pwd
 
 ## Задача
 
-Создайте исполняемый скрипт:
+Создайте скрипт именно **в этом каталоге**:
 
-```text
-folder_report.sh
+```bash
+nano folder_report.sh
 ```
+
+Первая строка может быть любой из двух корректных форм:
+
+```bash
+#!/usr/bin/env bash
+```
+
+или:
+
+```bash
+#!/bin/bash
+```
+
+После сохранения:
+
+```bash
+chmod +x folder_report.sh
+```
+
+Запускать файл нужно через:
+
+```bash
+./folder_report.sh
+```
+
+> Если Bash пишет `command not found` или `No such file or directory`, сначала выполните `pwd`. Для этого этапа вы должны находиться в `/root/bash08/work/final`.
 
 Он должен принимать **один аргумент — путь к каталогу**.
 
@@ -134,9 +160,22 @@ touch .done
 Проверьте:
 
 ```bash
+pwd
 cat folder_report.sh
 cat report.txt
 ls -la
 ```
 
-Когда всё готово — нажмите **CHECK**.
+Первая строка `pwd` должна быть:
+
+```text
+/root/bash08/work/final
+```
+
+Если вы случайно вернулись в `/root/bash08/work`, вернитесь:
+
+```bash
+cd /root/bash08/work/final
+```
+
+Только после этого нажмите **CHECK**.
